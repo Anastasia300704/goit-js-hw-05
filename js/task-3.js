@@ -1,10 +1,6 @@
 const sortByDescendingFriendCount = (users) => {
-    const sortedUsers = users.slice().sort((a, b) => b.friends - a.friends);
-    return sortedUsers.map(user => user.name);
-}
-
-
-
+  return users.sort((a, b) => b.friends.length - a.friends.length);
+};
 
 
 
@@ -88,3 +84,7 @@ console.log(
 //     gender: "male"
 //   }
 // ]
+
+
+
+
